@@ -22,7 +22,7 @@ function Contact() {
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" ></textarea>
 
-                   {check == true && text != ""? <label for="submit">Thank you submit for email</label>: <button onClick={() => setCheck(true)} type="submit" value="send message">Send Message</button>} 
+                   {check == true && text != ""? <label for="submit">Thank you submit for email but i fix in email not work to me and please contact is joshuaclinton790@gmail.com</label>: <button onClick={() => setCheck(true)} type="submit" value="send message">Send Message</button>} 
                 </form>
             </main>
 
