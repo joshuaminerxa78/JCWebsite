@@ -1,5 +1,6 @@
 import React from 'react'
 import './Project.css'
+import pdf2 from '../../assets/images/certificate-hack-the-waste-joshua-clinto_a92zJmU.pdf'
 
 function Project() {
     return (
@@ -13,7 +14,7 @@ function Project() {
                         <p>Developed a smart recycling app using Python and React to help users sort and manage waste efficiently.
                             My team placed second in an international hackathon.</p>
                     </div>
-                    <embed class="pdfimag" src="src/assets/images/certificate-hack-the-waste-joshua-clinto_a92zJmU.pdf" width="15%" height="90%" />
+                    <embed class="pdfimag" src={pdf2} width="15%" height="90%" />
                 </div>
 
                 <div class="project-card2">

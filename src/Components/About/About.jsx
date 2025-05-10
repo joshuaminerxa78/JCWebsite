@@ -1,5 +1,11 @@
 import React from 'react'
 import './About.css'
+import Certificate1 from '../../assets/images/Joshua Clinton - Agentic Automation Certificate of Attendance.pdf'
+import Certificate2 from '../../assets/images/Python.pdf'
+import Certificate3 from '../../assets/images/Joshua Clinton crefit.pdf'
+import ima1 from '../../assets/images/IMG_4956.jpeg'
+import ima2 from '../../assets/images/CD2A5931-420B-4574-B626-833C7F9F02AD.jpeg'
+import pdf from '../../assets/images/Joshua Clinton Letter Tutoring.pdf'
 
 function About() {
   return (
@@ -15,7 +21,7 @@ function About() {
         </div>
 
         <div id="article_About">
-            <img class="photoicon" src="src/assets/images/IMG_4956.jpeg"/>
+            <img class="photoicon" src={ima1}/>
 
             <div id="textexper">
                 <h2>Education:</h2>
@@ -44,7 +50,7 @@ function About() {
         </div>
 
         <div id="Experience">
-            <img class="photoicon" src="src/assets/images/CD2A5931-420B-4574-B626-833C7F9F02AD.jpeg"/>
+            <img class="photoicon" src={ima2}/>
             <div id="experience_article">
                 <h2>Experience:</h2>
                 <ul>
@@ -88,21 +94,21 @@ function About() {
             <div id="crefit_show">
                 <div id="Agentic_Automation_Certificate">
                     <h2 id="Agentic_Automation_text">Agentic Automation:</h2>
-                    <embed src="src/assets/images/Joshua Clinton - Agentic Automation Certificate of Attendance.pdf" width="45%" height="90%" />
+                    <embed src={Certificate1} />
                 </div>
 
                 <div id="Python_Certificate">
                     <h2 id="Python_text">Python:</h2>
-                    <embed src="src/assets/images/Python.pdf" width="45%" height="90%" />
+                    <embed src={Certificate2} width="45%" height="90%" />
                 </div>
 
                 <div id="Tutoring_Certificate">
                     <h2 id="Tutoring_text">Tutoring:</h2>
-                    <embed src="src/assets/images/Joshua Clinton crefit.pdf" width="40%" height="70%" />
+                    <embed src={Certificate3} width="40%" height="70%" />
                 </div>
 
                 <div id="button">
-                    <button id="button2" class="button"><span><a href="src/assets/images/Joshua Clinton Letter Tutoring.pdf"
+                    <button id="button2" class="button"><span><a href={pdf}
                                 download>Tutoring PDF</a></span></button>
                 </div>
             </div>
