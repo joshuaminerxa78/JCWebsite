@@ -1,31 +1,50 @@
-import React,{useState} from 'react'
+import { useState } from 'react'
 import './Contact.css'
 
 function Contact() {
-
     const [check, setCheck] = useState(false)
-    const [text , setText] = useState('')
+    const [text, setText] = useState('')
 
     return (
         <>
-
-            <main class="form-container">
+            <main className="form-container">
                 <h2 id='topic3'>Contact</h2>
-                <form name="contact" method="POST" data-netlify="true" >
-                    <input type="hidden" name='form-names' value='contact' />
-                    <label for="name">Name:</label>
-                    <input onChange={(e) => setText(e.target.value)} type="text" id="name" name="name" required/>
+                <form
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
+                    onSubmit={() => setCheck(true)}
+                >
+                    <input type="hidden" name="form-name" value="contact" />
 
-                    <label for="email">Email:</label>
-                    <input onChange={(e) => setText(e.target.value)}  type="email" id="email" name="email" required/>
+                    <label htmlFor="name">Name:</label>
+                    <input
+                        onChange={(e) => setText(e.target.value)}
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                    />
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" ></textarea>
+                    <label htmlFor="email">Email:</label>
+                    <input
+                        onChange={(e) => setText(e.target.value)}
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    />
 
-                   {check == true && text != ""? <label for="submit">Thank you submit for email</label>: <button onClick={() => setCheck(true)} type="submit">Send Message</button>} 
+                    <label htmlFor="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    {check && text !== "" ? (
+                        <label htmlFor="submit">Thank you! Your message has been submitted.</label>
+                    ) : (
+                        <button type="submit">Send Message</button>
+                    )}
                 </form>
             </main>
-
         </>
     )
 }
