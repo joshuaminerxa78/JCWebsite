@@ -1,0 +1,22 @@
+#menu{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(47, 60, 42);
+    border-radius: 26px;
+    padding: 2%;
+    position: sticky;
+    top: 0;
+    width: 35%;
+    margin-left: 32%;
+}
+
+.text{
+    margin: 2%;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(226,66,12,255);
+    margin: 2%;
+    margin-top: 1.6%;
+}

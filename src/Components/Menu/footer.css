@@ -1,0 +1,21 @@
+#footercreate{
+    background-color: rgb(47, 60, 42);
+    border-radius: 26px;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer_menu{
+    display: flex;
+    margin-left: -15%;
+}
+
+#imgicon{
+    display: flex;
+    column-gap: 10%;
+}
+
+.ima{
+    height: 4vh;
+}

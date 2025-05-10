@@ -1,0 +1,7 @@
+body{
+  background-color: rgba(42,53,37,255);
+  font-family: "Merriweather", serif;
+  color: rgba(226,66,12,255);
+  border: 3px rgba(226,66,12,255) solid;
+  border-radius: 25px;
+}
