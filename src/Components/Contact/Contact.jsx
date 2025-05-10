@@ -11,7 +11,7 @@ function Contact() {
 
             <main class="form-container">
                 <h2 id='topic3'>Contact</h2>
-                <form action="POST" data-netlify="true" >
+                <form method="POST" data-netlify="true" >
                     <input type="hidden" name='form-names' value='contact' />
                     <label for="name">Name:</label>
                     <input onChange={(e) => setText(e.target.value)} type="text" id="name" name="name" required/>
