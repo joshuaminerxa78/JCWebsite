@@ -7,9 +7,8 @@ function Contact() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setCheck(true);  // Show the thank you message
+    const handleSubmit = () => {
+        setCheck(true); // Show the thank you message
     };
 
     return (
