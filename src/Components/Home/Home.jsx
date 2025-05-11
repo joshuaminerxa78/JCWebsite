@@ -31,7 +31,7 @@ function Home() {
       <article id="qoute">
         <h1 id="text_qoute_text">
           "I’m passionate about tackling new problems every day, and I believe I can be helpful to companies that need
-          better to be software engineering and software development"
+          better software engineering and software development."
         </h1>
 
         <h1 id="text_qoute_text_Names">By Joshua Clinton</h1>

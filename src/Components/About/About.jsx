@@ -28,8 +28,8 @@ function About() {
                 <ul>
                     <li>Diploma of Information Technology</li>
                     <ul>
-                        <li> Start at 2023 to 2026 </li>
-                        <li> Marjor is Software Development </li>
+                        <li > From 2023 to 2026 </li>
+                        <li> Major in Software Development </li>
                         <li> Relevant coursework: Software Development and total 13/24 Distinctions for modules or
                             subjects</li>
                         <li>Programming, Database, Website and Software Testing and Software Analysis & Design,
@@ -56,16 +56,16 @@ function About() {
                 <ul>
                     <li>Belgium Campus Tutoring Peering program</li>
                     <ul>
-                        <li>I have taught both hearing and deaf students, and I help with any topic-related problems
+                        <li>I have taught both hearing and deaf students, and I can help with any topic-related problems
                             from modules in Programming, Database, Website and Software Testing and Software Analysis &
                             Design, mathematics, and mathematics statistics. I am skilled in using English and sign
-                            language to teach studentsand communication and time management</li>
+                            language to teach students, and communication and time management</li>
                     </ul>
                 </ul>
                 <ul>
-                    <li>Hack the Waste as Hackathon</li>
+                    <li>Hack the Waste at Hackathon</li>
                     <ul>
-                        <li>International Hackathon 2023 in online: I participated in an online international event on
+                        <li>International Hackathon 2023 online: I participated in an online international event on
                             waste management called Hackwaste.</li>
                     </ul>
                 </ul>
@@ -73,15 +73,15 @@ function About() {
                 <ul>
                     <li>International BusIT (Business IT) Week</li>
                     <ul>
-                        <li>I work with university students at Belgium Campus in South African , and my team
+                        <li>I work with university students at Belgium Campus in South Africa, and my team
                             collaborates well together.</li>
                     </ul>
                 </ul>
 
                 <ul>
-                    <li>Hack The Waste as Hackathon</li>
+                    <li>Hack The Waste at Hackathon</li>
                     <ul>
-                        <li>I did make project mobile app and solve problem for business and think design and Global
+                        <li>I made a mobile app and solved problems for businesses and think design and Global
                             Networking and teamwork.</li>
                     </ul>
                 </ul>
