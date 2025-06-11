@@ -12,7 +12,7 @@ function Contact() {
 
             <main className="form-container">
                 <h1 id='topic12'>Contact</h1>
-                <form name="contact" >
+                <form action="/contact-form" name="contact" >
                     <input type="hidden" name="form-name" value="contact" />
 
                     <label htmlFor="name">Name:</label>
