@@ -3,12 +3,18 @@ import './Contact.css'
 
 function Contact() {
 
-    
+
     const [check, setCheck] = useState(false)
     const [text, setText] = useState('')
 
     return (
         <>
+
+            <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+                <input type="text" name="name" />
+                <input type="email" name="email" />
+                <textarea name="message"></textarea>
+            </form>
 
             <main class="form-container">
                 <h1 id='topic12'>Contact</h1>
