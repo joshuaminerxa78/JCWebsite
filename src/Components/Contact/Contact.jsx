@@ -12,9 +12,8 @@ function Contact() {
 
             <main className="form-container">
                 <h1 id='topic12'>Contact</h1>
-                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                    <input type="hidden" name="bot-field" />
-                    <input type="hidden" name="form-name" value="contact" />
+                <form name="contact" data-netlify="true" >
+                    <input type="hidden" name="form-name" value="name_of_my_form" />
 
                     <label htmlFor="name">Name:</label>
                     <input onChange={(e) => setText(e.target.value)} type="text" id="name" name="name" required />
