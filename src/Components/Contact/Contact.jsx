@@ -11,8 +11,7 @@ function Contact() {
 
             <main class="form-container">
                 <h1 id='topic12'>Contact</h1>
-                <form method="POST" data-netlify="true" >
-                    <input type="hidden" name='form-names' value='contact' />
+                <form name="contact" method="POST" data-netlify="true" onSubmit= 'submit'>
                     <label for="name">Name:</label>
                     <input onChange={(e) => setText(e.target.value)} type="text" id="name" name="name" required/>
 
@@ -22,7 +21,7 @@ function Contact() {
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" ></textarea>
 
-                   {check == true && text != ""? <label for="submit">I fix in email not work to me and please contact is joshuaclinton790@gmail.com</label>: <button onClick={() => setCheck(true)} type="submit" value="send message">Send Message</button>} 
+                   {check == true && text != ""? <label for="submit">I fix in email not work to me and please contact is joshuaclinton790@gmail.com</label>: <button onClick={() => setCheck(true)} type="submit">Send Message</button>} 
                 </form>
             </main>
 
