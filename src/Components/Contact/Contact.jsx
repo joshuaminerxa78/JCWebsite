@@ -12,7 +12,7 @@ function Contact() {
 
             <main class="form-container">
                 <h1 id='topic12'>Contact</h1>
-                <form name="contact" data-netlify="true" >
+                <form name="contact" method="POST" netlify>
                     <input type="hidden" name="form-name" value="contact" />
 
                     <label htmlFor="name">Name:</label>
