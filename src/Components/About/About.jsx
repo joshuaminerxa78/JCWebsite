@@ -79,7 +79,7 @@ function About() {
 
                         <div id="button">
                             <button id="button2" class="button"><span><a href={pdf}
-                                download>Tutoring PDF</a></span></button>
+                                download>Tutoring Letter</a></span></button>
                         </div>
                     </div>
 
