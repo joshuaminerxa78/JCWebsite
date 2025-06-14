@@ -1,33 +1,51 @@
-import { useState } from 'react'
-import './Contact.css'
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import './Contact.css';
 
 function Contact() {
+    const form = useRef();
+    const [isSent, setIsSent] = useState(false);
+    const [isError, setIsError] = useState(false);
 
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-    const [check, setCheck] = useState(false)
-    const [text, setText] = useState('')
+        emailjs
+            .sendForm("service_34gtn2g", "template_3801fww", form.current, "puxjFQW9Qmprs9yBn")
+            .then(() => {
+                setIsSent(true);
+                setIsError(false);
+            })
+            .catch(() => {
+                setIsSent(false);
+                setIsError(true);
+            });
+
+        e.target.reset();
+    };
 
     return (
-        <>
-                <div>
+        <div>
             <main className="form-container">
-                <h1 id='topic12'>Contact</h1>
-                <form name="contact" >
+                <h1 id="topic12">Contact</h1>
+                <form ref={form} name="contact" onSubmit={sendEmail}>
                     <label htmlFor="name">Name:</label>
-                    <input onChange={(e) => setText(e.target.value)} type="text" id="name" name="name" required />
+                    <input type="text" id="name" name="user_name" required />
 
                     <label htmlFor="email">Email:</label>
-                    <input onChange={(e) => setText(e.target.value)} type="email" id="email" name="email" required />
+                    <input type="email" id="email" name="user_email" required />
 
                     <label htmlFor="message">Message:</label>
-                    <textarea id="message" name="message" ></textarea>
+                    <textarea id="message" name="message" required></textarea>
 
-                    {check == true && text != "" ? (<label htmlFor="submit">I fix in email not work to me and please contact is joshuaclinton790@gmail.com</label>) : (<button onClick={() => setCheck(true)} type="submit">Send Message</button>)}
+                    <button type="submit">Send Message</button>
                 </form>
+
+                {isSent && <p className="success-message">Thank you!</p>}
+                {isError && <p className="error-message">Something went wrong. Please try again later.</p>}
             </main>
-            </div>
-        </>
-    )
+        </div>
+    );
 }
 
-export default Contact
+export default Contact;
