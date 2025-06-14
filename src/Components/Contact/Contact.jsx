@@ -38,11 +38,8 @@ function Contact() {
                     <label htmlFor="message">Message:</label>
                     <textarea id="message" name="message" required></textarea>
 
-                    <button type="submit">Send Message</button>
+                    <button type="submit">{isSent? 'Thank you!': isError?'Something went wrong. Please try again later.':'Send Message'}</button>
                 </form>
-
-                {isSent && <p className="success-message">Thank you!</p>}
-                {isError && <p className="error-message">Something went wrong. Please try again later.</p>}
             </main>
         </div>
     );
