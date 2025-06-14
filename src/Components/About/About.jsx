@@ -6,38 +6,12 @@ import Certificate3 from '../../assets/images/Joshua Clinton crefit.pdf'
 import ima1 from '../../assets/images/IMG_4956.jpeg'
 import ima2 from '../../assets/images/CD2A5931-420B-4574-B626-833C7F9F02AD.jpeg'
 import pdf from '../../assets/images/Joshua Clinton Letter Tutoring.pdf'
+import {education, experience} from "./Data_About"
+import EducationCard from './educationCard'
+import ExperienceCard from './experienceCard'
 
 function About() {
-    const education = [{
-        name_school: "Diploma of Information Technology",
-        years: "From 2023 to 2026",
-        coursework: "Relevant coursework: Software Development and total 13/24 Distinctions for modules or subjects",
-        other: "Programming, Database, Website and Software Testing and Software Analysis & Design,mathematics, and mathematics statistics."
-    },
-    {
-        name_school: "Fulton School for the Deaf",
-        years: "2019-2022: Top Achievement",
-        coursework: "2022: Grade 12 RCL representative and Award dux, Top Achievement, 6/7 Subject or modules over 70% in SBA and presession.",
-        other: " Hution Bursary award R20 000."
-    }]
 
-    const experience = [{
-        experience_name: "Belgium Campus Tutoring Peering program",
-        explain_experience: "I have taught both hearing and deaf students, and I can help with any topic-related problems from modules in Programming, Database, Website and Software Testing and Software Analysis & Design, mathematics, and mathematics statistics. I am skilled in using English and sign language to teach students, and communication and time management"
-    },
-    {
-        experience_name: "Hack the Waste at Hackathon",
-        explain_experience: "International Hackathon 2023 online: I participated in an online international event on waste management called Hackwaste."
-    },
-    {
-        experience_name: "International BusIT (Business IT) Week",
-        explain_experience: "I work with university students at Belgium Campus in South Africa, and my team collaborates well together."
-    },
-    {
-        experience_name: "Hack The Waste at Hackathon",
-        explain_experience: "I made a mobile app and solved problems for businesses and think design and Global Networking and teamwork."
-    }
-    ]
     return (
         <>
 
@@ -51,36 +25,36 @@ function About() {
                 </div>
 
                 <div id="article_About">
-                    <img class="photoicon" src={ima1} />
+                    <img className="photoicon" src={ima1} />
 
                     <div id="textexper">
                         <h2>Education:</h2>
                         <ul>
-                            {education.map(item => <><li key={item}>{item.name_school}
-                            </li>
-                                <ul key={item}>
-                                    <li key={item}>{item.years}</li>
-                                    <li key={item}>{item.coursework}</li>
-                                    <li key={item}>{item.other}</li>
-                                </ul></>)}
+                            {education.map((item, index) =>
+                            (<EducationCard
+                                key={index}
+                                name_school={item.name_school}
+                                years={item.years}
+                                coursework={item.coursework}
+                                other={item.other}
+                            />)
+                            )}
                         </ul>
 
                     </div>
                 </div>
 
                 <div id="Experience">
-                    <img class="photoicon" src={ima2} />
+                    <img className="photoicon" src={ima2} />
                     <div id="experience_article">
                         <h2>Experience:</h2>
-                        {experience.map(item => <>
-                            <ul key={item}>
-                                <li key={item}>{item.experience_name}</li>
-                                <ul key={item}>
-                                    <li key={item}>
-                                        {item.explain_experience}
-                                    </li>
-                                </ul>
-                            </ul></>)}
+                        {experience.map((item, index) =>
+                        (<ExperienceCard
+                            key={index}
+                            experience_name={item.experience_name}
+                            explain_experience={item.explain_experience}
+                        />)
+                        )}
                     </div>
                 </div>
 
