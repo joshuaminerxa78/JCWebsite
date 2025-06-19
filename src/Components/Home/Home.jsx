@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Home.css';
 import { Typewriter } from 'react-simple-typewriter';
 import pic from '../../assets/images/Image (2).jpeg';
