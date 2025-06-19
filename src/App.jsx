@@ -9,10 +9,10 @@ import Footer from "./Components/Menu/footer";
 
 function App() {
   return (
-          <BrowserRouter>
-    <>
-      <head><link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet"></link></head>
-      <Header />
+    <BrowserRouter>
+      <>
+        <head><link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet"></link></head>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Home" element={<Home />} />
@@ -20,9 +20,9 @@ function App() {
           <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-      <Footer/>
-    </>
-          </BrowserRouter>
+        <Footer />
+      </>
+    </BrowserRouter>
   )
 }
 

@@ -14,16 +14,7 @@ function Home() {
               words={[
                 "I'm a Software Developer.",
                 "I'm a Software Engineer.",
-                "I'm a Game Developer."
-              ]}
-              loop={true}
-              cursor
-              cursorStyle=
-              "|"
-              typeSpeed={70}
-              deleteSpeed={50}
-              delaySpeed={1500}
-            />
+                "I'm a Game Developer."]} loop={true} cursor cursorStyle= "|" typeSpeed={70} deleteSpeed={50} delaySpeed={1500} />
           </span>
         </h1>
       </article>

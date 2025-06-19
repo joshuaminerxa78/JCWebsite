@@ -10,17 +10,13 @@ function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs
-            .sendForm("service_34gtn2g", "template_3801fww", form.current, "puxjFQW9Qmprs9yBn")
+        emailjs.sendForm("service_34gtn2g", "template_3801fww", form.current, "puxjFQW9Qmprs9yBn")
             .then(() => {
-                setIsSent(true);
-                setIsError(false);
+                setIsSent(true); setIsError(false);
             })
             .catch(() => {
-                setIsSent(false);
-                setIsError(true);
+                setIsSent(false); setIsError(true);
             });
-
         e.target.reset();
     };
 
@@ -38,7 +34,7 @@ function Contact() {
                     <label htmlFor="message">Message:</label>
                     <textarea id="message" name="message" required></textarea>
 
-                    <button type="submit">{isSent? 'Thank you!': isError?'Something went wrong. Please try again later.':'Send Message'}</button>
+                    <button type="submit">{isSent ? 'Thank you!' : isError ? 'Something went wrong. Please try again later.' : 'Send Message'}</button>
                 </form>
             </main>
         </div>
