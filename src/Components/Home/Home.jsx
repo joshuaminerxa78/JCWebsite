@@ -13,16 +13,15 @@ function Home() {
             <Typewriter
               words={[
                 "I'm a Software Developer.",
-                "I'm a Software Engineer.",
-                "I'm a Game Developer."]} loop={true} cursor cursorStyle= "|" typeSpeed={70} deleteSpeed={50} delaySpeed={1500} />
+                "Soon coming..."]} loop={true} cursor cursorStyle= "|" typeSpeed={70} deleteSpeed={50} delaySpeed={1500} />
           </span>
         </h1>
       </article>
 
       <article id="qoute">
         <h1 id="text_qoute_text">
-          "I’m passionate about tackling new problems every day, and I believe I can be helpful to companies that need
-          better software engineering and software development."
+          "I’m passionate about tackling new problems every day, and I believe science and technology interest about real world solve problem and research for  
+          help better humanity for solve problem with science and technology ."
         </h1>
 
         <h1 id="text_qoute_text_Names">By Joshua Clinton</h1>

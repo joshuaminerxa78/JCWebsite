@@ -19,8 +19,8 @@ function About() {
                 <div id="boxmain">
                     <h1>Introduction</h1>
                     <h1 id="story">
-                        I’m a Third-year student majoring in Software Development, and my goal is to seek new challenges and
-                        environments in companies from around the world.
+                        I'm student final year study major software development and I'm tutor Feb 2024- Feb 2026. I'm passion science and technology interest about real world solve problem and research for 
+                         help better humanity for solve problem with science and technology .
                     </h1>
                 </div>
 
