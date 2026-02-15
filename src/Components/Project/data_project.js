@@ -8,6 +8,6 @@ export const project = [
         project_explain: "Created a responsive web interface to monitor temperature, water levels, and humidity to help preserve food in rural areas. The project used HTML, CSS, and real-time data display."
     },
     {
-        project_names: "Hand Gesture Recognition",
+        project_names: "Hand Gesture Recognition - Sign Speak AI in 2025 PROJ381 final marks is 83%",
         project_explain: "Worked on a Computer Vision project to detect hand gestures using Python and OpenCV, aimed at improving accessibility for the deaf and hard-of-hearing community."
     }]
