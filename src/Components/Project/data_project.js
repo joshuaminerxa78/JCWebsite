@@ -10,4 +10,8 @@ export const project = [
     {
         project_names: "Hand Gesture Recognition - Sign Speak AI in 2025 PROJ381 final marks is 83%",
         project_explain: "Worked on a Computer Vision project to detect hand gestures using Python and OpenCV, aimed at improving accessibility for the deaf and hard-of-hearing community."
+    },
+    {
+        project_names: "Make chat-bot using API design front and back-end ",
+        project_explain: "I used gemini as Google AI and i find API link and safety prevent harm from bad actor, and Tools Used: JavaScript and React and API desing and Back-end as express fetch and send."
     }]

@@ -23,19 +23,7 @@ function Contact() {
     return (
         <div>
             <main className="form-container">
-                <h1 id="topic12">Contact</h1>
-                <form ref={form} name="contact" onSubmit={sendEmail}>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" id="name" name="user_name" required />
-
-                    <label htmlFor="email">Email:</label>
-                    <input type="email" id="email" name="user_email" required />
-
-                    <label htmlFor="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-
-                    <button type="submit">{isSent ? 'Thank you!' : isError ? 'Something went wrong. Please try again later.' : 'Send Message'}</button>
-                </form>
+                <h1 id="topic12">Contact only message email or linkedin DM 'Direct Message' </h1>
             </main>
         </div>
     );

@@ -12,7 +12,7 @@ function Home() {
           <span className="wrap">
             <Typewriter
               words={[
-                "I'm a Software Developer.",
+                "I'm a software engineer.","I'm a data science", "I'm a data analytics ",
                 "Soon coming..."]} loop={true} cursor cursorStyle= "|" typeSpeed={70} deleteSpeed={50} delaySpeed={1500} />
           </span>
         </h1>

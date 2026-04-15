@@ -12,47 +12,9 @@
 }
 
 #topic12{
-    margin-left: 34.5%;
+    margin-left: 0%;
     margin-bottom: 20px;
-    width: 40%;
+    width: 70%;
     margin-top: 2%;
 }
 
-form label {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid rgba(226,66,12,255);
-    border-radius: 8px;
-    margin-top: 5px;
-    font-size: 1rem;
-    background-color: #fff;
-    color: #000;
-    font-family: "Merriweather", serif;
-}
-
-form textarea {
-    resize: vertical;
-}
-
-button {
-    background-color: rgba(226,66,12,255);
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    width: 100%;
-}
-
-button:hover {
-    background-color: rgb(180, 50, 10);
-}
