@@ -9,7 +9,7 @@ function footer() {
         <>
             <footer id="footercreate">
                 <div id="imgicon">
-                    <a href="https://www.linkedin.com/in/joshua-clinton-43335726a/" target="_blank"><img class="ima" src={linkedin} /></a>
+                    <a href="https://www.linkedin.com/in/joshua-clinton/" target="_blank"><img class="ima" src={linkedin} /></a>
                     <a href="https://github.com/joshuaminerxa78" target="_blank"><img class="ima" src={git} /></a>
                 </div>
             </footer>
